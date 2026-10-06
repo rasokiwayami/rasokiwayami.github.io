@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="YNU LMS Drive Deliveryは、利用者自身の授業資料をGoogle Driveへ保存し、保存結果を検証する個人用ツールです。">
+  <title>YNU LMS Drive Delivery</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, sans-serif; color: #172522; background: #f3f6f4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header, main, footer { max-width: 820px; margin: auto; padding: 28px 24px; }
+    header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+    header strong { font-size: 1rem; }
+    a { color: #17624c; text-underline-offset: .2em; }
+    h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); line-height: 1.45; letter-spacing: -.02em; margin: 12px 0 20px; }
+    h2 { font-size: 1.2rem; margin-top: 0; }
+    p, li { line-height: 1.9; }
+    p { margin: 12px 0; }
+    .label { color: #17624c; font-weight: 650; }
+    .lead { font-size: 1.08rem; }
+    section { background: white; border: 1px solid #dae3dd; border-radius: 12px; padding: 24px; margin: 24px 0; }
+    ul { padding-left: 1.4em; margin-bottom: 0; }
+    footer { color: #56655e; font-size: .9rem; padding-top: 12px; }
+    a:focus-visible { outline: 3px solid #b0d8c8; outline-offset: 4px; }
+  </style>
+</head>
+<body>
+  <header><strong>YNU LMS Drive Delivery</strong><a href="privacy.html">プライバシーポリシー</a></header>
+  <main>
+    <p class="label">個人用の授業資料管理</p>
+    <h1>授業資料のDrive保存と検証を自動化するツール</h1>
+    <p class="lead">利用者自身がLMSから取得した授業資料を、本人のGoogle Driveへ保存します。保存した内容を読み戻して照合し、資料一覧と索引を更新します。</p>
+    <section>
+      <h2>このアプリが行うこと</h2>
+      <ul>
+        <li>設定された授業フォルダへの資料保存</li>
+        <li>資料の版と内容の照合による重複保存の抑制</li>
+        <li>保存済みファイルの読戻しとSHA-256による検証</li>
+        <li>確認できた保存状態を反映した資料一覧・索引の更新</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Google Driveのアクセス権</h2>
+      <p>以前に別のアプリで保存した資料も照合するため、Googleの同意画面ではDriveの全ファイルへのアクセスを求めます。配信処理は、設定された保存先と対象ファイルを確認してから動作します。</p>
+      <p>資料の搬送にモデルは使用しません。内容理解や学習支援は別の機能が担当します。このDrive配信機能は、課題の提出、ファイルの自動削除、共有権限の変更を行いません。</p>
+      <p><a href="privacy.html">データの利用・保存・権限の取り消しについて</a></p>
+    </section>
+    <p>開発・運用：<a href="https://github.com/rasokiwayami">rasokiwayami</a>。本人が管理する端末で利用する個人用ソフトウェアです。横浜国立大学の公式サービスではありません。</p>
+  </main>
+  <footer>YNU LMS Drive Delivery</footer>
+</body>
+</html>
